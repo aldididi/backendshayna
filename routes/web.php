@@ -11,8 +11,11 @@
 |
 */
 
-Route::get('/', 'DashboardController@index');
+//use Illuminate\Routing\Route;
+use Illuminate\Support\Facades\Route;
 
-Auth::routes();
+Route::get('/', 'DashboardController@index')->name('dashboard');
 
-// Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes(['register' => false]);
+
+Route::resource('products', 'ProductController');
