@@ -23,8 +23,8 @@
                                 <tbody>
                                     @forelse ($items as $item)
                                     <tr>
-                                    <td>{{ $items -> id }}</td>
-                                        <td>{{ $items -> product -> name }}</td>
+                                    <td>{{ $item -> id }}</td>
+                                        <td>{{ $item -> product -> name }}</td>
                                         <td>
                                         <img src="{{url($item->photo)}}" alt="">
                                         </td>
