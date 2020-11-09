@@ -24,10 +24,10 @@
 
                     <li class="menu-title">Transaksi</li><!-- /.menu-title -->
                     <li class="">
-                        <a href="#"> <i class="menu-icon fa fa-list"></i>Lihat Transaksi</a>
+                    <a href="{{route('transactions.index')}}"> <i class="menu-icon fa fa-list"></i>Lihat Transaksi</a>
                     </li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
+            </div>
         </nav>
     </aside>
     <!-- /#left-panel -->
