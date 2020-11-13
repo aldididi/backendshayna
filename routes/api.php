@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Http\Request;
-
+//use Illuminate\Routing\Route;
+use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -16,3 +17,7 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//endpoint untuk API 
+Route::get('products', 'API\ProductController@all');
+Route::post('checkout', 'API\CheckoutController@checkout');
