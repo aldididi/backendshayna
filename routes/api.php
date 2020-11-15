@@ -21,3 +21,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 //endpoint untuk API 
 Route::get('products', 'API\ProductController@all');
 Route::post('checkout', 'API\CheckoutController@checkout');
+Route::get('transactions/{id}', 'API\TransactionController@get');
